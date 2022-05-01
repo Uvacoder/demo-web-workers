@@ -1,0 +1,17 @@
+{
+  "name": "learn-web-workers",
+  "version": "1.0.0",
+  "description": "An introduction to web workers and multithreading",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  },
+  "type": "module"
+}

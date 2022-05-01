@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour to grayscale image converter (single threaded)</title>
+    <link rel="stylesheet" href="grayscale.css" />
+    <script
+      src="https://kit.fontawesome.com/f31e403c0b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Colour to grayscale image converter (single threaded)</h1>
+    <div class="animations">
+      <div class="animation nonGpuAccelerated"></div>
+      <div class="animation gpuAccelerated"></div>
+    </div>
+    <div class="converter">
+      <div id="uploadsPane" class="thumbnailsContainer empty">
+        <label class="uploadsInput">
+          <input type="file" id="imageUpload" multiple hidden />
+        </label>
+      </div>
+      <button id="convertToGrayscale" class="convertButton">Convert</button>
+      <div class="outputPane">
+        <div id="downloadsPane" class="thumbnailsContainer"></div>
+      </div>
+    </div>
+  </body>
+  <script src="upload.js" type="module"></script>
+  <script src="convert.js" type="module"></script>
+</html>
